@@ -13,6 +13,7 @@
 ActiveRecord::Schema.define(version: 20170507112606) do
 
   create_table "characters", force: :cascade do |t|
+    t.string   "name",       null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
