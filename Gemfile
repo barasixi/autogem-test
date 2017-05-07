@@ -37,6 +37,10 @@ group :development, :test do
 # Rspec
   gem 'rspec-rails', '~> 3.5'
   gem "factory_girl_rails"
+# autodoc
+  gem "autodoc"
+# automock
+# request-describer
 end
 
 group :development do
