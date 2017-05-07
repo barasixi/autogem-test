@@ -24,14 +24,15 @@ class CharactersController < ApplicationController
   # POST /characters
   # POST /characters.json
   def create
+    # puts character_params[:name]
     @character = Character.new(character_params)
 
     respond_to do |format|
       if @character.save
-        format.html { redirect_to @character, notice: 'Character was successfully created.' }
+        # format.html { redirect_to @character, notice: 'Character was successfully created.' }
         format.json { render :show, status: :created, location: @character }
       else
-        format.html { render :new }
+        # format.html { render :new }
         format.json { render json: @character.errors, status: :unprocessable_entity }
       end
     end
@@ -69,6 +70,7 @@ class CharactersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def character_params
-      params.fetch(:character, {})
+      # params.fetch(:character, {})
+      params.require(:character).permit(:name)
     end
 end
