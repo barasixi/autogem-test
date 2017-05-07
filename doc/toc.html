@@ -1,0 +1,98 @@
+<head>
+  <style>
+    .api-docs {
+      left: 210px;
+    }
+
+    .api-docs, .api-docs-toc {
+      width: 66%;
+     }
+
+     .api-action {
+       padding: 10px;
+     }
+
+    .tocify-wrapper {
+      overflow-y: auto;
+      overflow-x: hidden;
+      position: fixed;
+      width: 210px;
+      float: left;
+      font-size: 16px;
+      background-color: #AAAADD;
+      top: 1px;
+      bottom: -1px;
+      padding: 10px;
+    }
+
+    .generated-at {
+      position: fixed;
+      bottom: 10px;
+    }
+
+    .api-resource {
+      border-bottom: black 1px solid;
+    }
+
+    pre {
+      padding: 10px;
+      background-color: #CCCCEE;
+    }
+
+    .page-wrapper {
+      margin-left: 240px;
+      min-width: 700px;
+      position: relative;
+      z-index: 10;
+    }
+  </style>
+</head>
+
+
+<html>
+<div class='tocify-wrapper'>
+<h1> Table of Contents </h1>
+      <li>
+    <a href="#doc/characters.md">characters.md</a>
+  </li>
+  
+<div class='generated-at'>
+Generated at:
+<br>
+2017-05-07 21:34:04 +0900</div>
+</div>
+
+<div class='page-wrapper'>
+  <div id="doc/characters.md" class="api-resource"><div class="api-action"><h2>GET /characters</h2>
+
+<p>------works! (now write some real specs).</p>
+
+<h3>Example</h3>
+
+<h4>Request</h4>
+
+<pre><code>GET /characters HTTP/1.1
+Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Content-Length: 0
+Host: www.example.com
+</code></pre>
+
+<h4>Response</h4>
+
+<pre><code>HTTP/1.1 200
+Cache-Control: max-age=0, private, must-revalidate
+Content-Length: 2
+Content-Type: application/json; charset=utf-8
+ETag: W/&quot;4f53cda18c2baa0c0354bb5f9a3ecbe5&quot;
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Request-Id: 258ac6eb-ecb7-4101-b51e-47a83861f45f
+X-Runtime: 0.022597
+X-XSS-Protection: 1; mode=block
+
+[
+
+]
+</code></pre>
+</div></div></div>
+</html>

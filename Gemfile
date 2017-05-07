@@ -39,6 +39,7 @@ group :development, :test do
   gem "factory_girl_rails"
 # autodoc
   gem "autodoc"
+  gem "redcarpet"
 # automock
 # request-describer
 end
